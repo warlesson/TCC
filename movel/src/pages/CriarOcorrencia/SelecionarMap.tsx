@@ -22,7 +22,7 @@ export default function SelecionarMap(){
         navigation.navigate('OcorrenciaData', { position });
     }
 
-    async function verifyLocationPermission(){
+ /*   async function verifyLocationPermission(){
         try {
             const granted = await PermissionsAndroid.request(
                 PermissionsAndroid.PERMISSIONS.ACCERS_FINE_LOCATION
@@ -56,13 +56,14 @@ export default function SelecionarMap(){
             );
         }
     }, [hasLocationPermission]);
+    */
 
     return (
         <View style={styles.container}>
             <MapView
                 initialRegion={{
-                    latitude: userPosition.latitude,
-                    longitude: userPosition.longitude,
+                    latitude: -3.0550938,
+                    longitude: -59.938083,
                     latitudeDelta: 0.008,
                     longitudeDelta: 0.008,
                 }}
